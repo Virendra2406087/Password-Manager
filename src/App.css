@@ -1,0 +1,393 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= NAVBAR ================= */
+.Image-Logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+.navbar {
+  background: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg);
+  background-size: cover;
+  border: 2px solid salmon;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.home {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home:hover {
+  font-weight: bold;
+}
+
+/* ================= CONTAINER ================= */
+.manager-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* optional vertical centering inside container */
+  text-align: center;
+  margin-bottom: 30px;      /* spacing from form */
+}
+
+.manager-header .logo {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.manager-header .t1 {
+  background: linear-gradient(90deg, #4535d2, #8b5cf6); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+}
+
+.manager-header .textgreen {
+  /* font-weight: bold; */
+  color: #2d6040; /* green accent */
+  font-weight: 5000;
+  margin-top: 5px;
+}
+
+.containers {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.container {
+  background: aliceblue;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* ================= TEXT ================= */
+.t1 {
+  color: green;
+  font-size: 43px;
+}
+
+.textgreen {
+  text-align: center;
+  color: green;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.yourpass {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+/* ================= MANAGER FORM ================= */
+.manager {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.manager input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid green;
+}
+
+.userinput {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pass {
+  width: 100%;
+  position: relative;
+}
+
+.show {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.show img {
+  width: 28px;
+}
+
+/* ================= BUTTON ================= */
+#button {
+  margin: 15px auto;
+  padding: 10px 20px;
+  background: rgb(97, 138, 97);
+  border: 2px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background: green;
+}
+
+/* ================= PASSWORD LIST ================= */
+.password {
+  max-width: 850px;
+  margin: auto;
+  width: 100%;
+}
+
+/* ================= TABLE (DESKTOP) ================= */
+.table-auto {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-auto table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table {
+  background: green;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.t-body {
+  background: rgb(148, 219, 148);
+}
+
+#copy,
+#edit {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE RESPONSIVE TABLE ================= */
+@media (max-width: 768px) {
+  .table-auto table,
+  .table-auto thead,
+  .table-auto tbody,
+  .table-auto th,
+  .table-auto td,
+  .table-auto tr {
+    display: block;
+    width: 100%;
+  }
+
+  .table-auto thead {
+    display: none;
+  }
+
+  .table-auto tr {
+    background: rgb(148, 219, 148);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .table-auto td {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 8px 0;
+  }
+
+  .table-auto td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: black;
+  }
+}
+
+/* ================= GITHUB ================= */
+.img-githup {
+  background: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg);
+  background-size: cover;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.githup {
+  width: 52px;
+  height: 52px;
+}
+
+.span {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+.modern-footer {
+  width: 100%;
+  padding: 30px 0;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+}
+
+.footer-logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-logo .t1 {
+  color: #38bdf8;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-links {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #93c5fd;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.credit {
+  margin-top: 5px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+
+/* ================= SMALL DEVICES ================= */
+@media (max-width: 480px) {
+  .logo {
+    font-size: large;
+  }
+
+  .t1 {
+    font-size: 26px;
+  }
+
+  .textgreen {
+    font-size: 18px;
+  }
+
+  .yourpass {
+    font-size: 20px;
+  }
+
+  .span {
+    font-size: medium;
+  }
+
+  .githup {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;   /* pushes footer to bottom */
+}
+
+.signin-card {
+  /* height: 200px; */
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 25px 30px;
+  border-radius: 16px;
+  background: url("https://tse3.mm.bing.net/th/id/OIP.zSdtYJQGh9PgSXum79iseAHaDt?pid=Api&P=0&h=180");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.signin-card h2 {
+  margin: 0;
+  font-weight: 600;
+}
